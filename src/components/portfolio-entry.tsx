@@ -76,6 +76,52 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
         <p className="text-sm text-zinc-600 mb-4 mt-4 italic">
           {portfolio.description}
         </p>
+        {(portfolio.reports && portfolio.reports.length > 0) || 
+         (portfolio.videos && portfolio.videos.length > 0) ? (
+          <div className="mt-4 pt-4 border-t border-zinc-200">
+            <h6 className="text-xs font-semibold text-zinc-700 mb-2 uppercase tracking-wide">
+              Materials
+            </h6>
+            <div className="space-y-2">
+              {portfolio.reports && portfolio.reports.length > 0 && (
+                <div>
+                  <span className="text-xs text-zinc-500">Reports: </span>
+                  {portfolio.reports.map((report, index) => (
+                    <span key={index}>
+                      <a
+                        href={report.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-zinc-700 hover:text-zinc-900 underline mr-2"
+                      >
+                        {report.title}
+                      </a>
+                      {index < portfolio.reports!.length - 1 && ", "}
+                    </span>
+                  ))}
+                </div>
+              )}
+              {portfolio.videos && portfolio.videos.length > 0 && (
+                <div>
+                  <span className="text-xs text-zinc-500">Videos: </span>
+                  {portfolio.videos.map((video, index) => (
+                    <span key={index}>
+                      <a
+                        href={video.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-zinc-700 hover:text-zinc-900 underline mr-2"
+                      >
+                        {video.title}
+                      </a>
+                      {index < portfolio.videos!.length - 1 && ", "}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        ) : null}
       </div>
     </div>
   );

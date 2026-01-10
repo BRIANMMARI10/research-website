@@ -89,6 +89,17 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
           )}
         </div>
         <div className="space-y-2">
+          {aboutMe.googleScholarUrl && (
+            <a
+              href={aboutMe.googleScholarUrl}
+              className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GraduationCap size={14} />
+              Google Scholar
+            </a>
+          )}
           <a
             href={`mailto:${aboutMe.email}`}
             className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
@@ -98,20 +109,6 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
             <Mail size={14} />
             {aboutMe.email}
           </a>
-          {aboutMe.googleScholarUrl && (
-            <>
-              <br />
-              <a
-                href={aboutMe.googleScholarUrl}
-                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GraduationCap size={14} />
-                Google Scholar
-              </a>
-            </>
-          )}
           {aboutMe.twitterUsername && (
             <>
               <br />

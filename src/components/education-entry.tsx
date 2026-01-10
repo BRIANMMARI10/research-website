@@ -30,6 +30,22 @@ export function EducationEntry({ education }: { education: Education }) {
               )}
             </p>
           )}
+          {education.honors && education.honors.length > 0 && (
+            <div className="mt-4 pt-4 border-t border-zinc-200">
+              <h6 className="text-xs font-semibold text-zinc-700 mb-2 uppercase tracking-wide">
+                Honors & Awards
+              </h6>
+              <ul className="space-y-2">
+                {education.honors.map((honor, index) => (
+                  <li
+                    key={index}
+                    className="text-sm text-zinc-600 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: honor }}
+                  />
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>

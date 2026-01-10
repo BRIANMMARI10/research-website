@@ -18,22 +18,17 @@ export interface AboutMe {
 }
 
 export const aboutMe: AboutMe = {
-  name: "Jane R. Smith",
-  title: "Ph.D. Candidate",
-  institution: "Stanford University",
+  name: "Brian Goodluck Mmari",
+  title: "Machine Learning Engineer",
+  institution: "Cofactor AI",
   // Note that links work in the description
   description:
-    "I'm a final-year <a href='https://www.stanford.edu'>PhD candidate</a> working at the intersection of causal inference and machine learning. My research focuses on developing robust, interpretable systems that can reason about cause and effect in complex environments.",
-  email: "______@stanford.edu",
-  imageUrl:
-    "https://images.unsplash.com/photo-1581481615985-ba4775734a9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  googleScholarUrl: "https://scholar.google.com/citations?user=bWtMl_MAAAAJ",
-  githubUsername: "janesmith",
-  linkedinUsername: "janesmith",
-  twitterUsername: "janesmith",
-  blogUrl: "https://",
-  cvUrl: "https://",
-  institutionUrl: "https://www.stanford.edu",
-  // altName: "",
-  // secretDescription: "I like dogs.",
+    "Hi there! I'm currently at <a href='https://www.cofactor.ai' target='_blank'>Cofactor AI</a>, where I build machine learning architectures that help hospitals capture value lost through clinical documentation gaps, coding inefficiencies, and denied or underpaid claims.<br><br>I recently graduated from <a href='https://www.princeton.edu' target='_blank'>Princeton University</a>, where I earned a degree in Electrical and Computer Engineering with a concentration in Robotics & Cyber-Physical Systems. My technical interests span legged and underwater robotics, multi-agent systems, machine learning, and embedded systems.<br><br>My long-term goal is to build multi-agent systems that can robustly interact in both physical and virtual environments. In the meantime, I'm focused on deepening my expertise by collaboratively solving challenging, real-world problems across AI, robotics, and systems—feel free to reach out via <a href='https://www.linkedin.com/in/brian-mmari-88b11216b' target='_blank'>LinkedIn</a> if you'd like to connect.<br><br>Outside of work, I enjoy playing soccer, working out, mentoring and tutoring students, playing board games, and spending time in nature.",
+  email: "bm6442@alumni.princeton.edu",
+  imageUrl: "/assets/img/Brian Mmari Headshot.jpeg",
+  googleScholarUrl: "https://scholar.google.com/citations?user=um_Xny8AAAAJ&hl=en",
+  githubUsername: "BRIANMMARI10",
+  linkedinUsername: "brian-mmari-88b11216b",
+  cvUrl: "/assets/resume/Mmari_Brian_Grad_CV.docx-3.pdf",
+  institutionUrl: "https://www.cofactor.ai",
 };

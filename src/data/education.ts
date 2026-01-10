@@ -5,22 +5,19 @@ export interface Education {
   advisor?: string;
   thesis?: string;
   thesisUrl?: string;
+  honors?: string[];
 }
 
 export const educationData: Education[] = [
-  // If you don't want to show education, just make the array empty.
   {
-    year: "2021—Present",
-    institution: "Stanford University",
-    degree: "Ph.D. in Computer Science",
-    advisor: "Prof. Sarah Johnson",
-  },
-  {
-    year: "2017—2021",
-    institution: "Massachusetts Institute of Technology",
-    degree: "B.S. in Computer Science and Mathematics",
-    thesis: "Algorithmic Approaches to Causal Discovery",
-    // Optional links to thesis
-    // thesisUrl: "https://dspace.mit.edu/handle/1721.1/149111"
+    year: "Aug 2021 - May 2025",
+    institution: "Princeton University",
+    degree: "Bachelor of Science in Engineering in Electrical and Computer Engineering",
+    honors: [
+      "<strong>Charlotte Mangum Student Support Program</strong>, <strong>Departmental Excellence in Engineering Funding</strong>, <strong>Undergraduate Fund for Academic Conferences</strong>: Awarded in total $1200 to present my research",
+      "<strong>Princeton Pathways to Graduate School Program</strong>: Selected from a competitive pool into the 2024 cohort",
+      "<strong>National Society of Black Engineers Conference Invitation</strong>: Granted free travel and accommodation by the Computer Science and Mechanical and Aerospace Engineering Departments to attend the NSBE conference in Kansas City, MO 2023",
+    ],
+    // Relevant Courseworks: Research Projects in Data Sciences, Optimal Learning, Intelligent Robotic Systems, Automatic Control Systems, Robotic and Autonomous Systems Lab, Machine Learning for Predictive Data Analytics, Algorithms and Data Structures
   },
 ];
