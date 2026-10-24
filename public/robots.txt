@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brianmmari10.github.io/research-website/sitemap.xml
