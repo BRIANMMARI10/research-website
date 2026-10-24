@@ -17,8 +17,8 @@ export const talksData: Talk[] = [
     title: "Active Aerodynamic Tail Enhances Agile Locomotion of Legged Robots in Challenging Natural Environments",
     authors: "Mmari B.G, Kaur, U., An J.",
     reports: [
-      { title: "Purdue Symposium Presentation", url: "/assets/reports/Purdue Symposium Presentation.pdf" },
-      { title: "Technical Summary", url: "/assets/reports/Mmari_Brian_TechnicalSummary.pdf" },
+      { title: "Purdue Symposium Presentation", url: "/research-website/assets/reports/Purdue Symposium Presentation.pdf" },
+      { title: "Technical Summary", url: "/research-website/assets/reports/Mmari_Brian_TechnicalSummary.pdf" },
     ],
   },
 ];
